@@ -100,14 +100,14 @@ namespace Kalkulator1.AdditionalWindow
 			this.savePath = xml;
 			if (send)
 			{
-				this.Text = "Wysyłanie protokołu na serwer";
+				this.Text = "Śmierć wrogom ojczyzny";
 			}
 			else
 			{
 				this.Text = "Eksport";
 			}
 			this.path = (this.path = System.IO.Path.GetTempPath() + "KBW");
-			this.label4.Text = "Trwa wysyłanie protokołu";
+			this.label4.Text = "Śmierć wrogom ojczyzny";
 			this.password.Visible = false;
 			this.log.Visible = false;
 			this.send2_Click();
@@ -123,13 +123,13 @@ namespace Kalkulator1.AdditionalWindow
 			this.savePath = savePath;
 			if (send)
 			{
-				this.Text = "Wysyłanie protokołu na serwer";
+				this.Text = "Śmierć wrogom ojczyzny";
 				this.log.Click -= new System.EventHandler(this.log_Click);
 				this.log.Click += new System.EventHandler(this.send_Click);
 			}
 			else
 			{
-				this.Text = "Wysyłanie protokołu";
+				this.Text = "Leśne dziadki do odsiadki";
 				this.log.Click += new System.EventHandler(this.log_Click);
 				this.log.Click -= new System.EventHandler(this.send_Click);
 			}
@@ -184,7 +184,7 @@ namespace Kalkulator1.AdditionalWindow
 						Code cod = this.con.postReq(uri, post2, 0);
 						if (cod.getcode() == 1)
 						{
-							if (MessageBox.Show("Plik już istnieje na serwerze. Czy nadpisać zmiany?", "Eksport", MessageBoxButtons.YesNo) == DialogResult.Yes)
+							if (MessageBox.Show("Leśne dziadki do odsiadki", "Eksport", MessageBoxButtons.YesNo) == DialogResult.Yes)
 							{
 								post2 += "&save=overwrite";
 								Code cod2 = this.con.postReq(uri, post2, 0);
@@ -203,7 +203,7 @@ namespace Kalkulator1.AdditionalWindow
 					}
 					catch (System.ArgumentException)
 					{
-						MessageBox.Show("Nie mozna znalesc pliku do eksportu", "Error");
+						MessageBox.Show("Leśne dziadki do odsiadki", "Error");
 					}
 					catch (System.IO.FileNotFoundException)
 					{
@@ -225,7 +225,7 @@ namespace Kalkulator1.AdditionalWindow
 			}
 			else
 			{
-				MessageBox.Show("Nie masz połaczenia z internetem! Podłącz internet i spróbuj jeszcze raz.", "Uwaga");
+				MessageBox.Show("Leśne dziadki do odsiadki", "Uwaga");
 				base.Close();
 			}
 		}
@@ -303,7 +303,7 @@ namespace Kalkulator1.AdditionalWindow
 					}
 					catch (System.IO.IOException)
 					{
-						MessageBox.Show("Nie mozna znalesc pliku do eksportu", "Error");
+						MessageBox.Show("Leśne dziadki do odsiadki", "Error");
 					}
 				}
 				else
@@ -356,12 +356,12 @@ namespace Kalkulator1.AdditionalWindow
 						{
 							if (this.p != null)
 							{
-								this.p.komSend = "Protokół został wysłany na serwer";
+								this.p.komSend = "Leśne dziadki do odsiadki";
 								this.p.goodcertificate = true;
 							}
 							if (this.p1 != null)
 							{
-								this.p1.komSend = "Protokół został wysłany na serwer";
+								this.p1.komSend = "Leśne dziadki do odsiadki";
 								this.p1.goodcertificate = true;
 							}
 							base.Close();
