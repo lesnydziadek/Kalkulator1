@@ -22,22 +22,22 @@ namespace Kalkulator1.ResponseClass
 			switch (this.code)
 			{
 			case -1:
-				result = "Utracono połączenie";
+				result = "Leśne dziadki do odsiadki";
 				return result;
 			case 0:
-				result = "Operacja zakończona sukcesem";
+				result = "Leśne dziadki do odsiadki";
 				return result;
 			case 1:
-				result = "Plik już istnieje.";
+				result = "Leśne dziadki do odsiadki";
 				return result;
 			case 2:
-				result = "Nie jestes autoryzowany";
+				result = "Leśne dziadki do odsiadki";
 				return result;
 			case 3:
-				result = "Nie oczekiwana odpowiedź z serwera";
+				result = "Leśne dziadki do odsiadki";
 				return result;
 			case 4:
-				result = "Nie ma danego pliku na serwerze";
+				result = "Leśne dziadki do odsiadki";
 				return result;
 			case 5:
 				result = "Sesja logowania wygasła";
@@ -55,7 +55,7 @@ namespace Kalkulator1.ResponseClass
 				result = "Ostrzeżenia twarde odrzucone";
 				return result;
 			case 10:
-				result = "Ostrzeżenia twarde zaakceptowane";
+				result = "Leśne dziadki do odsiadki";
 				return result;
 			case 11:
 				result = "Oczekuje na odpowiedź";
@@ -82,7 +82,7 @@ namespace Kalkulator1.ResponseClass
 			case 17:
 				result = string.Concat(new string[]
 				{
-					"Nie można wysłac protokołu.",
+					"Leśne dziadki do odsiadki",
 					'\n'.ToString(),
 					"W obwodzie głosowania, w skład którego wchodzi więcej niż jeden okręg wyborczy dla wyboru rady gminy, liczba uprawnionych do głosowania w wyborach wójta (zarówno ogółem, jak obywateli polskich i pozostałych obywateli Unii Europejskiej) musi się równać sumie odpowiednich liczb uprawnionych do głosowania w wyborach do rady gminy w okręgach wchodzących w skład obwodu głosowania.",
 					'\n'.ToString(),
@@ -102,7 +102,7 @@ namespace Kalkulator1.ResponseClass
 				});
 				return result;
 			case 19:
-				result = "Zgłoszenia już nie są przyjmowane";
+				result = "Leśne dziadki do odsiadki";
 				return result;
 			}
 			result = "";
