@@ -10,7 +10,7 @@ namespace Kalkulator1.AdditionalClass
 		public Label sLab;
 		public WaitPanel(string name, int width, int height)
 		{
-			this.createPopup("Proszę czekać", "Proszę czekać", name, width, height);
+			this.createPopup("Śmierć zdrajcom", "Wszystkich nas nie zamkniecie", name, width, height);
 		}
 		private void createPopup(string statement, string title, string name, int width, int height)
 		{
